@@ -9,16 +9,17 @@
 
     <TextView
         android:id="@+id/selectLevel1"
-        android:layout_width="326dp"
+        android:layout_width="197dp"
         android:layout_height="30dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
         android:text="@string/seviyyeni_sec"
         android:textAlignment="center"
         android:textColor="@android:color/background_light"
         android:textSize="24sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/radioGroup"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintEnd_toStartOf="@+id/radioGroup"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView3" />
 
@@ -26,20 +27,21 @@
         android:id="@+id/textView"
         android:layout_width="326dp"
         android:layout_height="40dp"
+        android:layout_marginTop="32dp"
         android:text="@string/bashliq"
         android:textAlignment="center"
         android:textColor="@android:color/background_light"
         android:textSize="24sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/firu"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+        app:layout_constraintTop_toBottomOf="@+id/selectLevel1" />
 
     <ImageView
         android:id="@+id/imageView3"
-        android:layout_width="101dp"
+        android:layout_width="100dp"
         android:layout_height="120dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
@@ -54,52 +56,49 @@
         android:id="@+id/elman"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
         android:background="@color/colorPrimaryDark"
         android:text="elman"
         android:textColor="@android:color/background_light"
-        app:layout_constraintBottom_toTopOf="@+id/other"
         app:layout_constraintEnd_toStartOf="@+id/adil"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/naza" />
+        app:layout_constraintTop_toTopOf="@+id/naza" />
 
     <Button
         android:id="@+id/firu"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
         android:background="@color/colorPrimaryDark"
         android:text="Firudin"
         android:textColor="@android:color/background_light"
-        app:layout_constraintBottom_toTopOf="@+id/adil"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/naza"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintTop_toTopOf="@+id/naza" />
 
     <Button
         android:id="@+id/adil"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
         android:background="@color/colorPrimaryDark"
         android:text="adil"
         android:textColor="@android:color/background_light"
-        app:layout_constraintBottom_toTopOf="@+id/other"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/elman"
-        app:layout_constraintTop_toBottomOf="@+id/firu" />
+        app:layout_constraintEnd_toStartOf="@+id/naza"
+        app:layout_constraintTop_toTopOf="@+id/naza" />
 
     <Button
         android:id="@+id/naza"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="36dp"
         android:background="@color/colorPrimaryDark"
         android:text="Mia"
         android:textColor="@android:color/background_light"
-        app:layout_constraintBottom_toTopOf="@+id/elman"
-        app:layout_constraintEnd_toStartOf="@+id/firu"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/textView"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/textView"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
 
@@ -107,25 +106,21 @@
         android:id="@+id/other"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
         android:background="@color/colorPrimaryDark"
         android:text="DIGER"
         android:textColor="@android:color/background_light"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/elman" />
+        app:layout_constraintStart_toEndOf="@+id/firu"
+        app:layout_constraintTop_toTopOf="@+id/naza" />
 
     <RadioGroup
         android:id="@+id/radioGroup"
         android:layout_width="280dp"
         android:layout_height="33dp"
+        android:layout_marginEnd="8dp"
         android:orientation="horizontal"
-        app:layout_constraintBottom_toTopOf="@+id/textView"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/selectLevel1">
+        app:layout_constraintTop_toTopOf="@+id/selectLevel1">
 
         <RadioButton
             android:id="@+id/r1"
