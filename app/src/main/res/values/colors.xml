@@ -4,4 +4,5 @@
     <color name="colorPrimaryDark">#303f9f</color>
     <color name="colorAccent">#FF4081</color>
     <color name="colorSplashBG">#7266AE</color>
+    <color name="colorTestGitHub">#22ff66</color>
 </resources>
